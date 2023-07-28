@@ -36,9 +36,13 @@ M.dap_go = {
   }
 }
 
-M.gopher = {
+M.vim_go = {
   plugin = true,
   n = {
+    ["<leader>Gr"] = {
+      "<cmd> GoRun <CR>",
+      "Execute current file with go run"
+    },
     ["<leader>Gsj"] = {
       "<cmd> GoTagAdd json <CR>",
       "Add json struct tags"
